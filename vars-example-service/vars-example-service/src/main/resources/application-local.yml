@@ -1,0 +1,25 @@
+noodev:
+  minio:
+    server: http://10.79.60.5:9000
+    access-key: sysadmin
+    secret-key: Resdii123456
+  backendless:
+    server-url: http://10.79.60.2:1338/noodev
+    app-id: 5fa458a3b6509b8327774d3fa04b7b5a
+    java-key: 2SdNf3RBOtvHzSKx0bkGDkvPnF1kLh4kjttYvV6L1u52anAtQZs7ia2JbMvHQaKi
+media-server:
+  bucket: dev-land
+  public-url: http://10.79.60.5:9000/dev-land
+microservice:
+  vars-id-service:
+    url: http://10.79.60.2:8500/vid
+  category-service:
+    url: http://10.79.60.2:8500/vcat
+  land-cms:
+    public-url: http://10.79.60.2:8580
+  vars-cms-service:
+    url: http://10.79.60.2:8500/vcms
+#    url: http://localhost:8088/vcms
+  vars-management-service:
+#    url: http://localhost:8081/vmanagement
+    url: http://10.79.60.2:8500/vmanagement

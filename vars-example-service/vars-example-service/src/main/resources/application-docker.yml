@@ -1,0 +1,46 @@
+noodev:
+  mariadb:
+    datasource:
+      url: ${DATABASE_MARIA_URI}
+      username: ${DATABASE_MARIA_USER}
+      password: ${DATABASE_MARIA_PASSWORD}
+  minio:
+    server: ${MINIO_SERVER_URL}
+    access-key: ${MINIO_USER}
+    secret-key: ${MINIO_PASSWORD}
+  backendless:
+    server-url: ${NOO_SERVER_URL}
+    app-id: ${NOO_APP_ID}
+    java-key: ${NOO_JAVA_KEY}
+    suggestion-post-email-template: ${SUGGESTION_POST_EMAIL_TEMPLATE}
+media-server:
+  bucket: ${MINIO_BUCKET}
+  public-url: ${MEDIA_PUBLIC_SERVER_URL}
+microservice:
+  vars-id-service:
+    url: ${VARS_ID_SERVICE_URL}
+  category-service:
+    url: ${VARS_CATEGORY_SERVICE_URL}
+  land-cms:
+    public-url: ${VARS_LAND_PUBLIC_URL}
+  vars-cms-service:
+    url: ${VARS_CMS_URL}
+  vars-management-service:
+    url: ${VARS_MANAGEMENT_URL}
+process:
+  send-suggest-post:
+    enabled: ${SEND_SUGGEST_POST_ENABLED}
+    logs-enabled: ${SEND_SUGGEST_POST_LOGS_ENABLED}
+  update-post-status:
+    enabled: ${UPDATE_POST_STATUS_ENABLED}
+    logs-enabled: ${UPDATE_POST_STATUS_LOGS_ENABLED}
+  auto-up-post:
+    enabled: ${AUTO_UP_POST_ENABLED}
+    logs-enabled: ${AUTO_UP_POST_LOGS_ENABLED}
+spring:
+  elasticsearch:
+    uris: ${ELASTIC_SEARCH_URIS}
+    username: ${ELASTIC_SEARCH_USERNAME}
+    password: ${ELASTIC_SEARCH_PASSWORD}
+    re-post-index: ${ELASTIC_RE_POST_INDEX}
+    sync-part-size: ${ELASTIC_SYNC_PART_SIZE}

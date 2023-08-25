@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: vars-category-service
+    version: test
+  profiles:
+    default: local
+server:
+  port: 8080
+  servlet:
+    context-path: /${spring.application.name}
