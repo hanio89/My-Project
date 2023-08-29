@@ -21,3 +21,5 @@ const LoginForm = ({ onLogin }) => {
 const RegisterForm = ({ onRegister }) => {
   // Tương tự như LoginForm, xử lý đăng kí và gọi hàm onRegister(username) khi đăng kí thành công
 };
+
+export default LoginForm; // Đảm bảo export chính là 'default'

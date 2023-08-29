@@ -8,5 +8,5 @@ const UserDetails = ({ user }) => {
     </div>
   );
 };
-
+export default UserDetails;
 // Tương tự như UserDetails, hiển thị thông tin chi tiết về tài sản, lịch sử giao dịch, ...

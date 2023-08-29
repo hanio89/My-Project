@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import LoginForm from './components/Auth/LoginForm';
 import RegisterForm from './components/Auth/RegisterForm';
-import Dashboard from './components/Dashboard/';
 import AdminPanel from './components/AdminPanel/AdminPanel';
-import UserProfile from './components/UserProfile';
-
+import UserProfile from './components/UserProfile/UserProfile'
+import Dashboard from './components/Dashboard/Dashboard'
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null); // Lưu thông tin người dùng đã đăng nhập

@@ -22,3 +22,4 @@ const PermissionManagement = ({ user, onUpdatePermission }) => {
     </div>
   );
 };
+export default UserList; // Đảm bảo export chính là 'default'
