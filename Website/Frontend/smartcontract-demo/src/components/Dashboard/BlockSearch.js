@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from './SearchBar';
+import SearchBar from './SearchBar/SearchBar';
 
 const BlockSearch = ({ onBlockSearch }) => {
   const handleBlockSearch = (searchQuery) => {

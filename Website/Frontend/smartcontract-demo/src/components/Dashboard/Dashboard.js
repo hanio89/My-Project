@@ -1,5 +1,5 @@
 import React from 'react';
-import AssetSearch from './AssetSearch';
+import AssetSearch from './AssetSearch/AssetSearch';
 import UserSearch from './UserSearch';
 import BlockSearch from './BlockSearch';
 

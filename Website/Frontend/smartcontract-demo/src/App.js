@@ -3,8 +3,9 @@ import './App.css';
 import LoginForm from './components/Auth/LoginForm';
 import RegisterForm from './components/Auth/RegisterForm';
 import AdminPanel from './components/AdminPanel/AdminPanel';
-import UserProfile from './components/UserProfile/UserProfile'
-import Dashboard from './components/Dashboard/Dashboard'
+import UserProfile from './components/UserProfile/UserProfile';
+import Dashboard from './components/Dashboard/Dashboard';
+
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null); // Lưu thông tin người dùng đã đăng nhập
@@ -69,6 +70,7 @@ function App() {
 
   return (
     <div className="App">
+      <Dashboard>      </Dashboard>
       {loggedInUser ? (
         <div>
           <button onClick={handleLogout}>Đăng Xuất</button>
